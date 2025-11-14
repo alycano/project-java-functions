@@ -4,6 +4,7 @@ public class Main {
         // Llamadas a funciones
         funcionSinParametrosSinRetorno();
         funcionConParametrosSinRetorno("Santiago", 31);
+        System.out.println("Resultado función sin parámetros con retorno: " + funcionSinParametrosConRetorno());
     }
 
     // 1. Función sin parámetros y sin retorno
@@ -14,5 +15,10 @@ public class Main {
     // 2. Función con parámetros y sin retorno
     public static void funcionConParametrosSinRetorno(String nombre, int edad) {
         System.out.println("Hola " + nombre + ". Tienes " + edad + " años.");
+    }
+
+    // 3. Función sin parámetros y con retorno
+    public static int funcionSinParametrosConRetorno() {
+        return 7;
     }
 }
