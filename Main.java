@@ -2,15 +2,19 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== Proyecto Funciones en Java ===");
 
-        // Llamada a la función sin parámetros y sin retorno
+        // 1. Función sin parámetros y sin retorno
         funcionSinParametrosSinRetorno();
 
-        // Llamada a la función con parámetros y sin retorno
+        // 2. Función con parámetros y sin retorno
         funcionConParametrosSinRetorno("Santiago", 31);
 
-        // Llamada a la función sin parámetros y con retorno
+        // 3. Función sin parámetros y con retorno
         int resultado = funcionSinParametrosConRetorno();
         System.out.println("Resultado función sin parámetros y con retorno: " + resultado);
+
+        // 4. Función con parámetros y con retorno
+        int suma = sumar(10, 20);
+        System.out.println("Resultado función con parámetros y con retorno: " + suma);
     }
 
     // 1. Función sin parámetros y sin retorno
@@ -26,5 +30,10 @@ public class Main {
     // 3. Función sin parámetros y con retorno
     public static int funcionSinParametrosConRetorno() {
         return 7;
+    }
+
+    // 4. Función con parámetros y con retorno
+    public static int sumar(int a, int b) {
+        return a + b;
     }
 }
